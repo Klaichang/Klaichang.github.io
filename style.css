@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #faf9ff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.header-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    animation: slideInFromBottom 1.5s ease;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background: #3a86ff;
+    list-style-type: none;
+    padding: 0.5rem 0;
+    animation: slideInFromTop 1s ease;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffbe0b;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeInUp 1s ease;
+}
+
+#skills .skills-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#skills .skill {
+    background: #ff006e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s;
+    cursor: pointer;
+    animation: bounce 1.5s infinite alternate;
+}
+
+#skills .skill:hover {
+    transform: scale(1.1);
+    background-color: #8338ec;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    color: #3a86ff;
+    margin-bottom: 0.5rem;
+}
+
+.project-preview {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffbe0b;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+    background-color: #ff006e;
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #8338ec;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #ff006e;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a86ff;
+    color: #fff;
+    animation: pulse 2s infinite alternate;
+}
+
+.description-box {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.short-description {
+    display: block;
+}
+
+.full-description {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #3a86ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #ffbe0b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes slideInFromBottom {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    from { opacity: 1; }
+    to { opacity: 0.8; }
+}

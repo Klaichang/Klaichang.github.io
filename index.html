@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Klaichang - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero-bg"></div>
+        <div class="header-content">
+            <h1>Jade Klaichang</h1>
+            <p>Student at University of North Texas | Aspiring IT Professional</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a student with two years of experience in C++ and proficiency in Git, VSCode, HTML, and CSS. I aim to gain hands-on experience in fields like software development, game development, and cybersecurity.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill">C++</div>
+            <div class="skill">Git</div>
+            <div class="skill">VSCode</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here’s a showcase of some of my recent projects.</p>
+
+        <div class="project-card">
+            <h3>Lifeguard Rotation Calculator</h3>
+            <div class="description-box">
+                <!-- Short description (visible by default) -->
+                <p class="short-description">The Lifeguard Rotation Calculator is a tool designed to help pool managers...</p>
+                
+                <!-- Full description (hidden initially) -->
+                <p class="full-description">
+                    The Lifeguard Rotation Calculator is a web-based tool designed to help pool managers or supervisors efficiently schedule lifeguard rotations based on customizable shift start and end times, as well as the number of lifeguards available.
+                    <br><br>
+                    With a simple interface, users can input the shift's start and end time and select the number of lifeguards (2 or 3). The calculator then generates a rotation schedule, taking into account standard work and break intervals (30-minute work intervals and either 30-minute or 1-hour breaks, depending on the number of lifeguards). The tool ensures that each lifeguard has sufficient breaks while maintaining coverage throughout the shift.
+                    <br><br>
+                    The output is displayed in a clear, formatted schedule, showing each rotation's start and end time, with times formatted in an easy-to-read AM/PM format. This tool streamlines rotation management, promoting both safety and efficiency at aquatic facilities.
+                </p>
+
+                <!-- Read More / Read Less button -->
+                <button class="read-more" onclick="toggleDescription(this)">Read More</button>
+            </div>
+
+            <!-- Project preview and link -->
+            <iframe src="https://www.example.com" class="project-preview" title="Lifeguard Rotation Calculator Preview"></iframe>
+            <a href="https://www.example.com" target="_blank" class="project-link">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:jklaichang01@gmail.com" class="contact-button">jklaichang01@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jadeklaichang/" target="_blank" class="contact-button">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Klaichang" target="_blank" class="contact-button">GitHub Profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jade Klaichang</p>
+    </footer>
+
+    <!-- JavaScript for Read More functionality -->
+    <script>
+        function toggleDescription(button) {
+            const descriptionBox = button.parentElement;
+            const fullDescription = descriptionBox.querySelector('.full-description');
+            const shortDescription = descriptionBox.querySelector('.short-description');
+
+            if (fullDescription.style.display === 'none' || fullDescription.style.display === '') {
+                fullDescription.style.display = 'block';
+                shortDescription.style.display = 'none';
+                button.textContent = 'Read Less';
+            } else {
+                fullDescription.style.display = 'none';
+                shortDescription.style.display = 'block';
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+</body>
+</html>
