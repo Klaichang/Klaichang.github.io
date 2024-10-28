@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #faf9ff;
+    background-color: #f0f4f1; /* Soft, natural green */
     color: #333;
     overflow-x: hidden;
 }
@@ -18,7 +18,7 @@ header {
     text-align: center;
     color: #fff;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #4c9a2a, #0a6a4a); /* Leafy green gradient */
     overflow: hidden;
 }
 
@@ -45,7 +45,7 @@ header h1 {
 nav ul {
     display: flex;
     justify-content: center;
-    background: #3a86ff;
+    background: #3b5d4f; /* Dark forest green */
     list-style-type: none;
     padding: 0.5rem 0;
     animation: slideInFromTop 1s ease;
@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffbe0b;
+    color: #94c6a1; /* Light green */
 }
 
 section {
@@ -82,7 +82,7 @@ section {
 }
 
 #skills .skill {
-    background: #ff006e;
+    background: #4c9a2a; /* Nature green */
     color: #fff;
     padding: 1rem;
     border-radius: 5px;
@@ -94,12 +94,12 @@ section {
 
 #skills .skill:hover {
     transform: scale(1.1);
-    background-color: #8338ec;
+    background-color: #0a6a4a; /* Darker green */
 }
 
 .project-card {
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #d6d1ba; /* Soft beige */
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 8px;
@@ -112,14 +112,14 @@ section {
 }
 
 .project-card h3 {
-    color: #3a86ff;
+    color: #4c9a2a;
     margin-bottom: 0.5rem;
 }
 
 .project-preview {
     width: 100%;
     height: 200px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #d6d1ba;
     border-radius: 5px;
     margin: 10px 0;
 }
@@ -127,7 +127,7 @@ section {
 .project-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #ffbe0b;
+    background-color: #a3c4bc; /* Soft mint green */
     color: #333;
     text-decoration: none;
     border-radius: 5px;
@@ -135,7 +135,7 @@ section {
 }
 
 .project-link:hover {
-    background-color: #ff006e;
+    background-color: #4c9a2a; /* Leaf green */
     transform: scale(1.05);
     color: #fff;
 }
@@ -143,7 +143,7 @@ section {
 .contact-button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #8338ec;
+    background-color: #0a6a4a; /* Dark forest green */
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
@@ -151,14 +151,14 @@ section {
 }
 
 .contact-button:hover {
-    background-color: #ff006e;
+    background-color: #4c9a2a; /* Leaf green */
     transform: scale(1.05);
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #3a86ff;
+    background-color: #3b5d4f;
     color: #fff;
     animation: pulse 2s infinite alternate;
 }
@@ -182,7 +182,7 @@ footer {
     display: inline-block;
     margin-top: 10px;
     padding: 0.5rem 1rem;
-    background-color: #3a86ff;
+    background-color: #3b5d4f;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -191,7 +191,7 @@ footer {
 }
 
 .read-more:hover {
-    background-color: #ffbe0b;
+    background-color: #94c6a1; /* Soft green on hover */
 }
 
 @keyframes fadeIn {
